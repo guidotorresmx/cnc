@@ -60,9 +60,8 @@ class Motor:
 
 
 def main():
-    m1 = Motor(dPin, pPin)
-    m2 = Motor(dPin, pPin)
-    m3 = Motor(dPin, pPin)
+    m1 = Motor(19, 6)
+    m2 = Motor(5, 13)
 
     def drawSquare(m1,m2):
         m1.setDir("izq")
@@ -83,4 +82,4 @@ def main():
             sleep(.01)
 
 if __name__ == '__main__':
-    main() 
+    main()
