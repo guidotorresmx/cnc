@@ -62,24 +62,25 @@ class Motor:
 def main():
     m1 = Motor(19, 6)
     m2 = Motor(5, 13)
-
+    period = .1
     def drawSquare(m1,m2):
         m1.setDir("izq")
         for i in range(400):
             m1.halfStep()
-            sleep(.01)
+            sleep(period)
         m2.setDir("izq")
         for i in range(400):
             m2.halfStep()
-            sleep(.01)
+            sleep(period)
         m1.setDir("der")
         for i in range(400):
             m1.halfStep()
-            sleep(.01)
+            sleep(period)
         m2.setDir("der")
         for i in range(400):
             m2.halfStep()
-            sleep(.01)
+            sleep(period)
 
+        draw
 if __name__ == '__main__':
     main()
