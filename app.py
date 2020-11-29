@@ -12,17 +12,17 @@ app.config['MONGODB_HOST'] = 'mongodb://localhost:27017/sivji-sandbox'
 app.debug = True
 
 # initalize app with database
-app = Flask(__name__)
+#app = Flask(__name__)
 
 
 @app.route("/", methods = ["POST", "GET"])
 def index():
-    if request.method is None:
+    if request.method == "GET":
         return render_template(
             'base.html',
             val1=str(10),
             val2=str(20),
-            val3=str(30)
+            val3=str(40)
             )
     print(request.method)
     print(request.form)
