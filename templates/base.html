@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
+</head>
+<body>
+
+<h1>Ejes CNC</h1>
+
+
+<div class="slidecontainer">
+  valores:
+
+  <form method="POST" action="" id="myform" name="myform">
+    <input id="slider1" type="range" min="1" max="99" step="1" value={{val1}} class="slider" name="slider1"/>
+    <p>Value: <span id="demo1"></span></p>
+    <input id="slider2" type="range" min="1" max="99" step="1" value={{val2}} class="slider" name="slider2"/>
+    <p>Value: <span id="demo2"></span></p>
+    <input id="slider3" type="range" min="1" max="99" step="1" value={{val3}} class="slider" name="slider3"/>
+    <p>Value: <span id="demo3"></span></p>
+
+  <input type="submit" value="send" hidden/>
+ </form>
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='myscript.js') }}"></script>
+  {% block content %}
+  {% endblock %}
+
+
+</div>
+
+
+</body>
+</html>

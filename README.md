@@ -1,2 +1,0 @@
-# cnc
-utilities for cnc
