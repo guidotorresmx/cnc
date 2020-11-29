@@ -80,7 +80,7 @@ def main():
         for i in range(400):
             m2.halfStep()
             sleep(period)
+    drawSquare(m1,m2)
 
-        draw
 if __name__ == '__main__':
     main()
